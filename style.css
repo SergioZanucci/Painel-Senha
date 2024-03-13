@@ -1,0 +1,284 @@
+body {
+    background-color: teal; 
+    height: 640px;
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        height: 775px;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 20px;
+}
+
+h1 {
+    color: white;
+    font-family: "Roboto";
+    margin: 0;
+}
+
+.texto {
+    bottom: 5px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 10px;
+    margin: 0;
+    text-align: end;
+    position: relative;
+}
+
+p {
+    color: yellow;
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+@media screen and (max-width: 665px) {
+    p {
+        text-align: center;
+    }
+}
+
+main {
+    height: 360px;
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        height: 600px;
+    }
+}
+
+.container__escolha__atendimento {
+    color: white;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+    .container__escolha__atendimento {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }  
+}
+
+.container__caixas {
+    display: flex;
+    font-family: "Roboto";
+    font-weight: 700;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container__mesas {
+    display: flex;
+    font-family: "Roboto";
+    font-weight: 700;
+    flex-direction: column;
+    gap: 12px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.open__modal {
+    background-color: teal; 
+    border-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 18px;
+    height: 40px;
+    width: 280px;
+}
+
+.container__agendamento {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.btn__agendamento {
+    width: 60%;
+    background-color: teal; 
+    border-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 18px;
+    height: 40px;
+}
+
+@media screen and (max-width: 665px) {
+    .btn__agendamento {
+       width: 100%;
+    }
+}
+
+#modal {
+    bottom: 255px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@media screen and (max-width: 850px) {
+    #modal {
+       width: 305px;
+    }
+}
+
+.modal__header {
+    display: none;
+    width: 50%;
+    height: 345px;
+}
+
+@media screen and (max-width: 850px) {
+    .modal__header {
+       width: 100%;
+    }
+}
+
+.container__modal__texto {
+    background-color: white;
+    color: rgb(37, 82, 214);
+    font-family: "Roboto";
+    font-weight: 100;
+    padding: 0 5px;
+    position: relative;
+    height: 230px;
+}
+
+@media screen and (max-width: 850px) {
+    .container__modal__texto {
+       width: 295px;
+       bottom: 295px;
+    }
+}
+
+.texto__emitir__senha {
+    color: darkslategray;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    top: 10px;
+}
+
+input {
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(37, 82, 214);
+    width: 97%;
+    height: 20px;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 665px) {
+    input {
+        margin: 0;
+    }
+}
+
+.container__confirma__cancela {
+    display: flex;
+    gap: 3px;
+    justify-content: flex-end;
+    margin: 0 6px;
+    position: relative;
+    top: 70px;
+}
+
+.confirmar {
+    background-color: rgb(37, 82, 214);
+    border-color: white;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+}
+
+.cancelar {
+    background-color: red;
+    border-color: white;
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+}
+
+.container__numerico {
+    background-color: whitesmoke;
+    bottom: 122px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0 10px;
+    width: 235px;
+    height: 210px;
+    position: relative;
+}
+
+@media screen and (max-width: 850px) {
+    .container__numerico {
+        bottom: 295px;
+        margin: 0;
+    }
+}
+
+.btn__numerico {
+    background-color: whitesmoke;
+    border-color: rgb(224, 217, 217);
+    border-style: solid;
+    cursor: pointer;
+    height: 45px;
+    width: 50px;
+}
+
+.btn__ok {
+    background-color: rgb(37, 82, 214);
+    border-color: rgb(224, 217, 217);
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    height: 45px;
+    width: 65px;
+}
+
+.btn__limpar{
+    background-color: grey;
+    border-color: rgb(224, 217, 217);
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    height: 45px;
+    width: 65px;
+}
+
+.btn__apagar {
+    background-color: red;
+    border-color: rgb(224, 217, 217);
+    border-style: solid;
+    color: white;
+    cursor: pointer;
+    height: 45px;
+    width: 65px;
+}

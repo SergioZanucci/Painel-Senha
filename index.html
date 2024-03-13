@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replicando Senha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <!-- <img src="imagens/logo.png" alt="imagem logo"> -->
+            <h1>SICOOBCREDICITRUS</h1>
+            <P class="texto">Cooperativa de Crédito</P>
+        </div>
+        <div>
+            <p>Escolha o serviço ao qual deseja atendimento</p>
+        </div>
+    </header>
+    <main>
+        <section class="container__escolha__atendimento">
+            <div class="container__caixas">
+                <h2>Caixas</h2>
+                <button onclick="abreModal()" class="open__modal">Normal</button>
+                <button onclick="abreModal()" class="open__modal">Preferencial</button>
+                <button onclick="abreModal()" class="open__modal">Preferencial + 80</button>
+            </div>
+           
+            <div class="container__mesas">
+                <h2>Mesas</h2>
+                <button onclick="abreModal()" class="open__modal">Normal</button>
+                <button onclick="abreModal()" class="open__modal">Preferencial</button>
+                <button onclick="abreModal()" class="open__modal">Preferencial + 80</button>
+            </div>
+        </section>
+
+        <section class="container__agendamento">
+            <button onclick="abreModal()" class="btn__agendamento">Confirmar Agendamento</button>
+        </section>
+      
+        <div id="modal">
+            <div class="modal__header">
+                <div class="container__modal__texto">
+                    <h3 class="texto__emitir__senha">Emitir Senha</h3>
+                    <h4>Preencha com o CPF ou CNPJ</h4>
+                    <input type="text">
+                    <div class="container__confirma__cancela">
+                        <button class="confirmar">Confirmar</button>
+                        <button onclick="fecharModal()" class="cancelar">Cancelar</button>
+                    </div>
+                </div> 
+            
+            <div class="container__numerico">
+                <button class="btn__numerico">1</button>
+                <button class="btn__numerico">2</button>
+                <button class="btn__numerico">3</button>
+                <button class="btn__ok">ok</button>
+                <button class="btn__numerico">4</button>
+                <button class="btn__numerico">5</button>
+                <button class="btn__numerico">6</button>
+                <button class="btn__limpar">Limpar</button>
+                <button class="btn__numerico">7</button>
+                <button class="btn__numerico">8</button>
+                <button class="btn__numerico">9</button>
+                <button class="btn__apagar">Apagar</button>
+                <button class="btn__numerico">0</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
