@@ -187,6 +187,7 @@ input {
     border-radius: 5px;
     border-style: solid;
     border-color: rgb(37, 82, 214);
+    font-size: 18px;
     width: 97%;
     height: 20px;
     margin: 0 5px;
@@ -213,6 +214,7 @@ input {
     border-style: solid;
     color: white;
     cursor: pointer;
+    font-family: "Roboto";
     height: 40px;
 }
 
@@ -222,6 +224,7 @@ input {
     border-style: solid;
     color: white;
     cursor: pointer;
+    font-family: "Roboto";
     height: 40px;
 }
 
@@ -249,6 +252,7 @@ input {
     border-color: rgb(224, 217, 217);
     border-style: solid;
     cursor: pointer;
+    font-size: 18px;
     height: 45px;
     width: 50px;
 }
@@ -259,6 +263,7 @@ input {
     border-style: solid;
     color: white;
     cursor: pointer;
+    font-family: "Roboto";
     height: 45px;
     width: 65px;
 }
@@ -269,6 +274,7 @@ input {
     border-style: solid;
     color: white;
     cursor: pointer;
+    font-family: "Roboto";
     height: 45px;
     width: 65px;
 }
@@ -279,6 +285,7 @@ input {
     border-style: solid;
     color: white;
     cursor: pointer;
+    font-family: "Roboto";
     height: 45px;
     width: 65px;
 }
