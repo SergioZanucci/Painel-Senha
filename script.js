@@ -1,7 +1,5 @@
 // Abre modal atraves de qualquer serviço.
 
-document.querySelector(".modal__header")
-
 function abreModal() {
     let modalHeader = document.querySelector(".modal__header");
     modalHeader.style.display = "block";
@@ -18,23 +16,17 @@ function fecharModal() {
 
 // Funcão inserir numeros atraves do teclado numerico.
 
-document.querySelector(".btn__numerico");
-
 function inserirNumero(num) {
     let btnNumerico = document.querySelector("input");
     btnNumerico.value += num;
-    console.log("btn__numerico");
 }
 
 // Função limpar campo do input 
 
-// document.querySelector(".btn__limpar");
-
-// function limparCampo() {
-//     let btnLimpar = document.querySelector("input");
-//     btnLimpar.innerHTML = btnLimpar.length;
-//     console.log(".btn__limpar");
-// }
+function limparCampo() {
+    let btnLimpar = document.querySelector("input");
+    btnLimpar.value = btnLimpar.value.slice(0, -1);
+}
 
 // Função de apagar campo do input 
 
