@@ -12,6 +12,8 @@ document.querySelector(".modal__header");
 function fecharModal() {
    let cancelar = document.querySelector(".modal__header");
    cancelar.style.display = "none";
+   cancelar = document.querySelector("input");
+   cancelar.value = "";
 }
 
 // Funcão inserir numeros atraves do teclado numerico.
@@ -21,41 +23,25 @@ function inserirNumero(num) {
     btnNumerico.value += num;
 }
 
-// Função limpar campo do input 
+// Função fechar container numerico, atraves do botão ok
+
+document.querySelector(".container__numerico");
+
+function btnOk() {
+    let containerNumerico = document.querySelector(".container__numerico");
+    // containerNumerico.style.display = "none";
+}
+
+// Função limpar campo do input atraves do botão limpar
 
 function limparCampo() {
     let btnLimpar = document.querySelector("input");
     btnLimpar.value = btnLimpar.value.slice(0, -1);
 }
 
-// Função de apagar campo do input 
+// Função de apagar campo do input atraves do botão apagar
 
 function apagarCampo() {
     let btnApagar = document.querySelector("input");
     btnApagar.value = "";
-    console.log(".btn__apagar");
 }
-
-
-
-
-
-
-
-// document.querySelector(".btn__ok");
-// let ok = document.querySelector("btn__ok");
-// let imprimirSenha = '';
-// let = CPF ["331.208.748-17"]
-// let = cooperado ["Sergio Henrique Zanucci", "CPF 331.208.748-17"];
-
-// function imprimirSenha (CPF = cooperado) {
-//     if { 
-//         (CPF == cooperado) {
-//             console.log("Seja bem vindo cooperado",(`${cooperado}`));
-//         }
-//     } else(CPF != cooperado) {
-//         console.log("Seja bem vindo!");
-
-//     }
-       
-// }
