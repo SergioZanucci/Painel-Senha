@@ -5,7 +5,7 @@ body {
 
 @media screen and (max-width: 850px) {
     body {
-        height: 775px;
+        height: 810px;
     }
 }
 
@@ -16,7 +16,8 @@ header {
 }
 
 img {
-    width: 20px;
+    width: 25px;
+    padding: 0 5px;
 }
 
 h1 {
@@ -268,7 +269,7 @@ input {
     width: 65px;
 }
 
-.btn__limpar{
+.removerUltimoDigito{
     background-color: grey;
     border-color: rgb(224, 217, 217);
     border-style: solid;

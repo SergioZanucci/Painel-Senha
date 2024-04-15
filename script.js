@@ -10,10 +10,10 @@ function abreModal() {
 document.querySelector(".modal__header");
 
 function fecharModal() {
-   let cancelar = document.querySelector(".modal__header");
-   cancelar.style.display = "none";
-   cancelar = document.querySelector("input");
-   cancelar.value = "";
+   let modalHeader = document.querySelector(".modal__header");
+   modalHeader.style.display = "none";
+   inputField = document.querySelector("input");
+   inputField.value = "";
 }
 
 // Funcão inserir numeros atraves do teclado numerico.
@@ -34,9 +34,9 @@ function btnOk() {
 
 // Função limpar campo do input atraves do botão limpar
 
-function limparCampo() {
-    let btnLimpar = document.querySelector("input");
-    btnLimpar.value = btnLimpar.value.slice(0, -1);
+function removerUltimoDigito() {
+    let btnRemoverUltimoDigito = document.querySelector("input");
+    btnRemoverUltimoDigito.value = btnRemoverUltimoDigito.value.slice(0, -1);
 }
 
 // Função de apagar campo do input atraves do botão apagar
