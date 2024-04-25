@@ -6,7 +6,7 @@
     <title>Replicando Senha</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script src="validacao.js" defer></script>
+    <script src="listaCliente.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -47,8 +47,7 @@
                     <h3 class="texto__emitir__senha">Emitir Senha</h3>
                     <h4>Preencha com o CPF ou CNPJ</h4>
                     <input type="text" name="cpf_cnpj" maxlength="14"
-                    pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" >
-                    <!-- <input type="number" name="quantidade" max="14"> -->
+                    pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
                     <div class="container__confirma__cancela">
                         <button class="confirmar">Confirmar</button>
                         <button onclick="fecharModal()" class="cancelar">Cancelar</button>
