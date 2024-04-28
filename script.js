@@ -9,8 +9,6 @@ function abreModal() {
 
 // Fecha modal atraves do botão cancelar.
 
-document.querySelector(".modal__header");
-
 function fecharModal() {
    let modalHeader = document.querySelector(".modal__header");
    modalHeader.style.display = "none";
@@ -26,8 +24,6 @@ function inserirNumero(num) {
     }
 }
 // Função fechar container numerico, atraves do botão ok
-
-document.querySelector(".container__numerico");
 
 function btnOk() {
     let containerNumerico = document.querySelector(".container__numerico");
@@ -46,4 +42,19 @@ function removerUltimoDigito() {
 function apagarCampo() {
     let btnApagar = document.querySelector("input");
     btnApagar.value = "";
+}
+
+function confirmaCliente() {
+    let btnConfirma = document.querySelector(".modal__nomeCliente");
+    btnConfirma.style.display = "block";
+    btnConfirma = document.querySelector(".modal__header");
+    btnConfirma.style.display = "none";
+    btnConfirma = document.querySelector("input");
+    btnConfirma.value = "";
+}
+
+function btnEncerrar() {
+    let btnEncerrar = document.querySelector(".modal__nomeCliente");
+    btnEncerrar.style.display = "none";
+    btnEncerrar.value = "";
 }

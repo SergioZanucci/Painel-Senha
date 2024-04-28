@@ -150,7 +150,7 @@ h2 {
 .modal__header {
     display: none;
     width: 50%;
-    height: 345px;
+    height: 340px;
 }
 
 @media screen and (max-width: 850px) {
@@ -290,3 +290,29 @@ input {
     height: 45px;
     width: 65px;
 }
+
+.modal__nomeCliente {
+    display: none;
+    background-color: antiquewhite;
+    width: 350px;
+    height: 250px;
+}
+
+@media screen and (max-width: 850px) {
+    .modal__nomeCliente {
+        bottom: 260px;
+        display: none;
+        position: relative;
+    }
+}
+
+.encerrar {
+    background-color:red ;
+    color: white;
+    cursor: pointer;
+    font-family: "Roboto";
+    height: 37px;
+    margin: 0px 10px;
+    position: relative;
+    top: 140px;
+} 
