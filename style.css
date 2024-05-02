@@ -155,7 +155,7 @@ h2 {
 
 @media screen and (max-width: 850px) {
     .modal__header {
-       width: 100%;
+       width: 80%;
     }
 }
 
@@ -302,6 +302,7 @@ input {
     .modal__nomeCliente {
         bottom: 260px;
         display: none;
+        left: 25px;
         position: relative;
     }
 }
@@ -314,5 +315,5 @@ input {
     height: 37px;
     margin: 0px 10px;
     position: relative;
-    top: 140px;
+    top: 170px;
 } 
