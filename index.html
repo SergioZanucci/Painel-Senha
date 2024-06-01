@@ -38,7 +38,7 @@
         </section>
 
         <section class="container__agendamento">
-            <button onclick="abreModal()" class="btn__agendamento">Confirmar Agendamento</button>
+            <button onclick="abreModalBtnAgendamento()" class="btn__agendamento">Confirmar Agendamento</button>
         </section>
       
         <div id="modal">
@@ -49,11 +49,11 @@
                     <input type="text" name="cpf_cnpj" maxlength="14"
                     pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
                     <div class="container__confirma__cancela">
-                        <button onclick="confirmaCliente()" class="confirmar">Confirmar</button>
+                        <button onclick="botaoConfirmar()" class="confirmar">Confirmar</button>
                         <button onclick="fecharModal()" class="cancelar">Cancelar</button>
                     </div>
                 </div> 
-            
+       
             <div class="container__numerico">
                 <button onclick="inserirNumero('1')" class="btn__numerico">1</button>
                 <button onclick="inserirNumero('2')" class="btn__numerico">2</button>
@@ -70,13 +70,13 @@
                 <button onclick="inserirNumero('0')" class="btn__numerico">0</button>
             </div>
         </div>
-        
-        <section class="modal__nomeCliente">
-            <div class="container__nomeCliente__texto">
-                <h4 class="nome__cliente"></h4>
-                <button onclick="btnEncerrar()" class="encerrar">Encerrar</button>
+        <div class="modal__containerCliente">
+            <div class="modal__nomeCliente">
+                <div class="container__encerrar">
+                    <button onclick="btnEncerrar()" class="encerrar">Encerrar</button>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 </html>

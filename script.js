@@ -7,6 +7,11 @@ function abreModal() {
     modalHeader.style.display = "block";
 }
 
+function abreModalBtnAgendamento() {
+    let btnAgendamento = document.querySelector(".modal__header");
+    btnAgendamento.style.display = "block"
+}
+
 // Fecha modal atraves do botão cancelar.
 
 function fecharModal() {
@@ -44,13 +49,15 @@ function apagarCampo() {
     btnApagar.value = "";
 }
 
-function confirmaCliente() {
-    let btnConfirma = document.querySelector(".modal__nomeCliente");
-    btnConfirma.style.display = "block";
-    btnConfirma = document.querySelector(".modal__header");
+function botaoConfirmar() {
+    let btnConfirma = document.querySelector(".modal__header");
     btnConfirma.style.display = "none";
+    btnConfirma = document.querySelector(".modal__containerCliente");
+    btnConfirma.style.display = "block";
     btnConfirma = document.querySelector("input");
     btnConfirma.value = "";
+    btnConfirma = document.querySelector(".container__encerrar");
+    btnConfirma.style.display = "block";
 }
 
 function btnEncerrar() {

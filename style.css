@@ -139,7 +139,7 @@ h2 {
     display: flex;
     justify-content: center;
     position: relative;
-}
+} 
 
 @media screen and (max-width: 850px) {
     #modal {
@@ -296,6 +296,7 @@ input {
     background-color: antiquewhite;
     width: 350px;
     height: 250px;
+    text-align: center;
 }
 
 @media screen and (max-width: 850px) {
@@ -308,6 +309,7 @@ input {
 }
 
 .encerrar {
+    /* display: none; */
     background-color:red ;
     color: white;
     cursor: pointer;
@@ -315,5 +317,5 @@ input {
     height: 37px;
     margin: 0px 10px;
     position: relative;
-    top: 170px;
+    top: 200px;
 } 

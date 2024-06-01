@@ -1,5 +1,5 @@
 let listaClientes = [ {
-    nome: "joão Facão",
+    nome: "João Facão",
     cpf: 62475338024,
     endereco: "R Feijão Bonito N 60",
     cidade: "Pedrinhas, SP"
@@ -12,3 +12,25 @@ let listaClientes = [ {
     cidade: "Pedrona, SP"
     }
 ]
+
+function botaoConfirmar() {
+    botaoConfirmar = document.querySelector(".modal__header");
+    botaoConfirmar.style.display = "none";
+    botaoConfirmar = document.querySelector(".modal__nomeCliente");
+    botaoConfirmar.style.display = "block";
+    // botaoConfirmar = document.querySelector(".encerrar");
+    // botaoConfirmar.style.display = "block";
+    let cpfOuCnpj = Number(document.querySelector("input").value);
+    // let nome = document.querySelector("modal__nomeCliente")
+    
+    const cliente = listaClientes.filter(cliente =>  {
+        if(cpfOuCnpj === cliente.cpf || cpfOuCnpj === cliente.cnpj) return cliente
+    });  
+    
+    if(cliente.length !== 0){
+        botaoConfirmar.textContent = `Seja bem vindo ${cliente[0].nome}`;
+    
+    }else{
+        botaoConfirmar. textContent = "Seja bem vindo!";
+    }
+}
