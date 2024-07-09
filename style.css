@@ -296,6 +296,7 @@ input {
     background-color: antiquewhite;
     width: 350px;
     height: 250px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -308,14 +309,26 @@ input {
     }
 }
 
-.encerrar {
+.texto__nomeCliente {
+    color: black;
+    font-family: "Roboto";
+    font-size: 20px;
+}
+
+.encerra__sessao {
     /* display: none; */
+    width: 0px;
+}
+
+.encerrar {
+    display: none;
     background-color:red ;
     color: white;
     cursor: pointer;
     font-family: "Roboto";
     height: 37px;
-    margin: 0px 10px;
+    /* margin: 0px 10px; */
     position: relative;
-    top: 200px;
+    top: 237px;
+    right: 90px;
 } 

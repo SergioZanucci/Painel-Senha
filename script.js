@@ -52,11 +52,11 @@ function apagarCampo() {
 function botaoConfirmar() {
     let btnConfirma = document.querySelector(".modal__header");
     btnConfirma.style.display = "none";
-    btnConfirma = document.querySelector(".modal__containerCliente");
-    btnConfirma.style.display = "block";
     btnConfirma = document.querySelector("input");
     btnConfirma.value = "";
-    btnConfirma = document.querySelector(".container__encerrar");
+    // btnConfirma = document.querySelector(".encerra__sessao");
+    // btnConfirma.style.display = "block";
+    btnConfirma = document.querySelector(".encerrar");
     btnConfirma.style.display = "block";
 }
 
@@ -65,3 +65,5 @@ function btnEncerrar() {
     btnEncerrar.style.display = "none";
     btnEncerrar.value = "";
 }
+
+

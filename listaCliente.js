@@ -18,10 +18,10 @@ function botaoConfirmar() {
     botaoConfirmar.style.display = "none";
     botaoConfirmar = document.querySelector(".modal__nomeCliente");
     botaoConfirmar.style.display = "block";
-    // botaoConfirmar = document.querySelector(".encerrar");
-    // botaoConfirmar.style.display = "block";
+    botaoConfirmar = document.querySelector(".texto__nomeCliente");
+    botaoConfirmar.style.display = "block";
+    
     let cpfOuCnpj = Number(document.querySelector("input").value);
-    // let nome = document.querySelector("modal__nomeCliente")
     
     const cliente = listaClientes.filter(cliente =>  {
         if(cpfOuCnpj === cliente.cpf || cpfOuCnpj === cliente.cnpj) return cliente
@@ -31,6 +31,7 @@ function botaoConfirmar() {
         botaoConfirmar.textContent = `Seja bem vindo ${cliente[0].nome}`;
     
     }else{
-        botaoConfirmar. textContent = "Seja bem vindo!";
+        botaoConfirmar. textContent = "Seja bem vindo!"; 
     }
 }
+
