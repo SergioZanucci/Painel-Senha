@@ -50,8 +50,8 @@
                     <input type="text" name="cpf_cnpj" maxlength="14"
                     pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})">
                     <div class="container__confirma__cancela">
-                        <button onclick="botaoConfirmar()" class="confirmar">Confirmar</button>
-                        <button onclick="fecharModal()" class="cancelar">Cancelar</button>
+                        <button class="confirmar">Confirmar</button>
+                        <button class="cancelar">Cancelar</button>
                     </div>
                 </div> 
        
@@ -74,11 +74,9 @@
 
         <div class="modal__nomeCliente">
             <div class="container__texto">
-                <p class="texto__nomeCliente"></p>  
+                <p class="texto__nomeCliente"></p>
+                <button onclick="btnEncerrar()" class="encerrar">Encerrar</button> 
             </div>           
-        </div>
-        <div class="encerra__sessao">
-            <button onclick="btnEncerrar()" class="encerrar">Encerrar</button> 
         </div>  
     </main>
 </body>

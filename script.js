@@ -49,16 +49,28 @@ function apagarCampo() {
     btnApagar.value = "";
 }
 
-function botaoConfirmar() {
-    let btnConfirma = document.querySelector(".modal__header");
-    btnConfirma.style.display = "none";
-    btnConfirma = document.querySelector("input");
-    btnConfirma.value = "";
-    // btnConfirma = document.querySelector(".encerra__sessao");
-    // btnConfirma.style.display = "block";
-    btnConfirma = document.querySelector(".encerrar");
-    btnConfirma.style.display = "block";
-}
+// function botaoConfirmar() {
+//     let btnConfirma = document.querySelector(".modal__header");
+//     btnConfirma.style.display = "none";
+//     btnConfirma = document.querySelector("input");
+//     btnConfirma.value = "";
+//     btnConfirma = document.querySelector(".encerrar");
+//     btnConfirma.style.display = "block";
+//     btnConfirma = document.querySelector(".encerrar");
+//     btnConfirma.style.display = "block";
+// }
+
+//A forma mais robusta (recomendada)
+// Troque o onclick="botaoConfirmar()" inline por event listeners em JavaScript, que não dependem do escopo global.
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btnConfirmar = document.querySelector(".confirmar");
+    const btnCancelar = document.querySelector(".cancelar");
+
+    if (btnConfirmar) btnConfirmar.addEventListener("click", botaoConfirmar);
+    if (btnCancelar) btnCancelar.addEventListener("click", fecharModal);
+});
+
 
 function btnEncerrar() {
     let btnEncerrar = document.querySelector(".modal__nomeCliente");

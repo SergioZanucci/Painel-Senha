@@ -315,13 +315,13 @@ input {
     font-size: 20px;
 }
 
-.encerra__sessao {
-    /* display: none; */
+/* .encerra__sessao {
+    display: none;
     width: 0px;
-}
+} */
 
 .encerrar {
-    display: none;
+    /* display: none; */
     background-color:red ;
     color: white;
     cursor: pointer;
@@ -329,6 +329,6 @@ input {
     height: 37px;
     /* margin: 0px 10px; */
     position: relative;
-    top: 237px;
-    right: 90px;
+    top: 160px;
+    /* right: 90px; */
 } 
